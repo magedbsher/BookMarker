@@ -1,0 +1,21 @@
+.content{
+    background-color: rgb(220, 220, 220);
+}
+
+.rad{
+background-image: linear-gradient(180deg, rgb(227, 227, 227), white);
+}
+
+.btn:hover.btn{
+    box-shadow: 0.25rem 0.25rem #888888;}
+    .rad h3{
+        margin-right: 8rem;
+    }
+
+    body h1{
+        color: #888888;
+        margin-bottom: 4rem;
+    }
+    body{
+        font-family: arial;
+    }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container my-5 py-3">
+            <h1>Bookmarker</h1>
+            <hr>
+            <div class="content text-center py-5 ">
+                <h2>Bookmark your favourite sites </h2>
+                <div class="w-75 mx-auto py-3">
+                    <h4>Site Name</h4>
+                    <div class="form-group ">
+                        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name" oninput="validateSiteName(this.value)">
+                      <P class="text-danger my-3 d-none" id="warningName">Name is required</P>
+                      <p class="text-dark bg-danger rounded-2 my-3 d-none" id="warningRepeat">This name is already existed</p>
+
+                    </div>
+                </div>
+
+                <div class="w-75 mx-auto py-3">
+                    <h4>Site Url</h4>
+                    <div class="form-group ">
+                        
+                        <input type="text" id="siteURL" class="form-control " placeholder="Website URL" onclick="validateSiteURL()">
+                        <P class="text-danger my-3 d-none" id="warningUrl">URL is required</P>
+
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="addData()" id="">Submit</button>
+            </div>
+            
+
+               <div  id="show">
+   
+            </div>
+            <hr>
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
